@@ -15,3 +15,9 @@ If you are developing a production application, we recommend using TypeScript an
 # GI-test
 Dashboard
 >>>>>>> 378bb83079beedefaf50603140a9f6beaa426adf
+
+
+
+
+After taking git clone please do npm install .
+
