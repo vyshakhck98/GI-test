@@ -1,0 +1,227 @@
+.dashboard-container {
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+}
+
+.sidebar {
+    width: 220px;
+    min-height: 100vh;
+    background: #001529;
+    padding-top: 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+    letter-spacing: 1px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    font-size: 20px;
+    gap: 10px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.avatar {
+    background: #1890ff;
+    margin-right: 10px;
+}
+
+.welcome-text {
+    font-size: 18px;
+    color: #5b5b5b;
+    font-weight: 600;
+}
+
+.dashboard-content {
+    padding: 20px;
+    width: 100%;
+    align-items: center;
+    background: #d0d0d0;
+}
+
+.user-table {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.ant-btn {
+    margin-right: 10px;
+}
+
+.ant-table {
+    background: white !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ant-table-thead > tr > th {
+    background: #4a6a89 !important;
+    color: white !important;
+    font-weight: bold !important;
+    text-align: center;
+}
+
+.ant-table-tbody > tr > td {
+    text-align: center;
+}
+
+.ant-spin-lg {
+    margin: 20px auto;
+}
+
+
+.ant-modal {
+    border-radius: 12px !important;
+    padding: 20px !important;
+    background: white !important;
+}
+
+.ant-modal-title {
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-align: center !important;
+}
+
+.ant-modal-content {
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.ant-modal-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+
+.ant-form-item {
+    margin-bottom: 15px !important;
+}
+
+
+.ant-btn-primary {
+    background: #1890ff !important;
+    border: none !important;
+    font-weight: bold !important;
+}
+
+.ant-btn-default {
+    background: #d9d9d9 !important;
+    font-weight: bold !important;
+}
+
+
+.ant-table-tbody > tr > td:last-child {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ant-table-tbody > tr > td:last-child .ant-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.custom-modal {
+    background: none !important; 
+    border-radius: 12px !important;
+}
+
+.custom-modal .ant-modal-content {
+    background: #333537 !important; 
+    border-radius: 12px !important;
+    padding: 20px !important;
+    color: white !important;
+}
+
+.custom-modal .ant-modal-header {
+    background: #34495e !important;
+    border-radius: 12px 12px 0 0 !important;
+    padding: 10px 20px !important;
+}
+
+.custom-modal .ant-modal-title {
+    color: white !important;
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-align: center !important;
+}
+
+.custom-modal .ant-modal-footer {
+    background: none !important;
+    border-radius: 0 0 12px 12px !important;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px !important;
+}
+
+.custom-modal .ant-form-item {
+    margin-bottom: 15px !important;
+}
+
+.custom-modal .ant-btn-primary {
+    background: #1890ff !important;
+    border: none !important;
+    font-weight: bold !important;
+}
+
+.custom-modal .ant-btn-default {
+    background: #d9d9d9 !important;
+    font-weight: bold !important;
+}
+
+.custom-modal .ant-btn-danger {
+    background: #e74c3c !important;
+    border: none !important;
+    font-weight: bold !important;
+}
+
+.loading-message {
+    text-align: center;
+    font-size: 20px;
+    color: #888;
+    margin-top: 50px;
+    font-weight: bold;
+    animation: fadeIn 1.5s ease-in-out infinite;
+  }
+  
+  /* Optional: Add a fade-in animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
