@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -11,50 +10,84 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #617fb8, #909eb5);
+    background: linear-gradient(135deg, #0a0a0a, #1f1f1f); /* Blackish gradient */
 }
-
 
 .register-main-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
+    padding: 20px;
 }
 
-
 .register-card {
-    width: 450px;
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+    backdrop-filter: blur(15px); /* Blur effect */
     border-radius: 16px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for depth */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Dark shadow */
     text-align: center;
     color: white;
 }
 
 .register-title {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
-    color: white;
+    color: #e2392c !important;
 }
 
 .register-form {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
 }
 
-.ant-input, .ant-input-password {
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    border: none;
-    border-radius: 8px;
+.ant-input,
+.ant-input-password,
+.ant-select-selector,
+.ant-picker {
+    background: rgba(255, 255, 255, 0.1) !important; /* Transparent white background */
+    color: white !important; /* White text */
+    border: 1px solid rgba(255, 255, 255, 0.2) !important; /* Subtle border */
+    border-radius: 8px !important;
+    transition: all 0.3s;
 }
 
-.ant-input::placeholder {
-    color: rgba(255, 255, 255, 0.8);
+.additional-text-style{
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important; /* Subtle border */
+}
+
+.ant-input:hover,
+.ant-input-password:hover,
+.ant-select-selector:hover,
+.ant-picker:hover {
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+}
+
+.ant-input::placeholder,
+.ant-input-password::placeholder {
+    padding:10px !important ;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.ant-input-password-icon {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.ant-select-arrow {
+    color: rgba(255, 255, 255, 0.8) !important; 
+}
+
+.ant-picker-suffix {
+    color: rgba(255, 255, 255, 0.8) !important;
 }
 
 .submit-button {
@@ -63,14 +96,14 @@
     font-size: 16px;
     font-weight: 600;
     border-radius: 8px;
-    background: linear-gradient(90deg, #ff9800, #ff5722);
+    background: linear-gradient(90deg, #ff9800, #ff5722); 
     color: white;
     border: none;
     transition: all 0.3s;
 }
 
 .submit-button:hover {
-    background: linear-gradient(90deg, #ff5722, #e91e63);
+    background: linear-gradient(90deg, #ff5722, #e91e63); /* Darker orange gradient */
 }
 
 .register-footer {
@@ -80,7 +113,7 @@
 }
 
 .footer-link {
-    color: #ffeb3b;
+    color: #ffeb3b; /* Yellow for links */
     text-decoration: none;
     font-weight: 500;
 }
@@ -89,8 +122,49 @@
     text-decoration: underline;
 }
 
-.ant-input-outlined {
-    background: #bbb9b945 !important;
-    border: white !important;
-    color: white !important;;
+.error-card {
+    margin-top: 20px;
+    background: rgba(255, 0, 0, 0.1); 
+    border: 1px solid rgba(255, 0, 0, 0.3); 
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .register-card {
+        padding: 15px;
+    }
+
+    .register-title {
+        font-size: 22px;
+    }
+
+    .submit-button {
+        font-size: 14px;
+    }
+
+    .register-footer {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .register-card {
+        padding: 10px;
+    }
+
+    .register-title {
+        font-size: 20px;
+    }
+
+    .submit-button {
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .register-footer {
+        font-size: 12px;
+    }
 }
